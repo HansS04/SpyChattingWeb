@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="cs">
+  <head>
+    <title>SpyChattingWeb</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Rye&display=swap" rel="stylesheet">
+    <link rel="icon"  href="img/avatar-man.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header >
+        <h1 class="display-4 text-center" id="heading">SpyChattingWeb</h1>
+    </header> 
+    <main class="container-fluid" id="main">
+        <div class="row" id="login">
+            <div class="col-12 " id="back">
+                <h2 class="text-center  text-light p-4 mb-5" id="login">Log in</h2>
+                <div class="container">
+                    <form>
+                        <div class="form-group row text-light">
+                            <label for="nickname" class="col-sm-2 col-form-label" id="nick-enter">nickname</label>
+                            <div class="col-sm-3">
+                                <input type="text" class="form-control" id="nickname" placeholder="Enter nickname">
+                            </div>
+                            <label for="sex" class="col-sm-2 col-form-label" id="sex-enter">man/woman</label>
+                            <div class="col-sm-3">
+                                <input type="text" class="form-control" id="sex" placeholder="Enter">
+                            </div>
+                               
+                            <label for="passwd" class="col-sm-2 col-form-label" id="password">password:</label>
+                            <div class="col-sm-3" id="passwd-enter">
+                                <input type="password" class="form-control" id="passwd" placeholder="Enter password">
+                            </div>
+                            <div class="col-sm-2">
+                                <button type="button" id="submit" class="btn ">access</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>        
+        <div class="row" id="transmission">
+            <div class="col-md-6 chat " id="ChattingPlace">
+                
+                <section id="chat">
+                    <h2 id="chatheading">Chat</h2>
+                    <div id="chatbox"></div>
+                    <div id="users"></div>
+                    <div class="container">
+                        <form>
+                            <div class="form-group row">
+                                <label for="message" class="col-sm-2 col-form-label">Message</label>
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control" id="message" placeholder="Enter the message">
+                                </div>
+                                <div class="col-sm-2">
+                                    <button type="button" id="send" class="btn">Send</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </section>                
+                
+            </div>
+           
+        </div>
+    </main> 
+    <footer class="container-fluid  p-3 text-left" id="footer">
+        <p>&copy; 2021 - SŠPU Opava - třída IT2 P2 - autor: Jan Slivka<br>
+                   -Zpracováno za účelem ukázky a naučení společností HansSIT.  </p>
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- Připojení knihovny socket.io -->
+    <script src="/socket.io/socket.io.js"></script>
+    <!-- Připojení JS na straně klienta -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

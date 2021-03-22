@@ -1,0 +1,59 @@
+#heading {
+    font-family: 'Rye', cursive;
+    padding: 50px;
+    background-color: white;
+    border: 5px solid black;
+    border-top-left-radius: 30px;
+    margin: 20px;
+    margin-right: 0px;
+    border-right: white;
+}
+#back{
+    background-color: rgb(22, 21, 21);
+    border-bottom-left-radius: 30px;
+}
+#main{
+    
+   
+    margin-left: 20px;
+    
+}
+#nick-enter{
+    margin-right: -100px;
+}
+#password{
+    margin-left: -250px;
+    margin-right: -100px;
+    
+}
+#submit{
+ 
+    background-color: black;
+    color: white;
+    border: 3px solid white;
+    
+}
+#footer{
+    background-color: rgb(75, 73, 73);
+    color: black;
+    margin-top: 220px;
+    font-family: jumbotron;
+}
+
+#ChattingPlace{
+    background-color: white;
+   
+}
+#chatheading{
+    text-align: center;
+    border-bottom: 2px solid black;
+    font-family: 'Rye', cursive;
+}
+#sex{
+    width: 80px;
+    margin-left: -90px;
+    
+}
+
+
+
