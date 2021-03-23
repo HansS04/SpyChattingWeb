@@ -55,5 +55,31 @@
     
 }
 
+div.scroll {
+     width: 730px;
+    height: 900x;
+    overflow: auto;
+    height: 300px;
+  }
+  #mes{
+      margin-right: -30px;
+      color: black;
+      font-weight: 500;
+  }
+  #send{
+      margin-top: 10px;
+      background-color: black;
+      color: white;
+  }
 
-
+#time{
+    font-size: 10px;
+}
+#heslo{
+    margin-top: 100px;
+    margin-left: 200px;
+}
+#code{
+    margin-top: 80px;
+    height: 100px;
+}

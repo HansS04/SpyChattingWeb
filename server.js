@@ -22,7 +22,8 @@ io.on('connection', (socket) => {
         let res = {}    
 
         //jestliže se bude heslo shodovat 
-        if (req.code === passwd) {
+        if (req.code === req.vvv ) {
+            console.log(req.vvv)
             console.log(req.nickname);
             console.log(req.sex);
             users.push(req.nickname);
